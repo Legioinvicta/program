@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Chrome, Firefox OS and Opera mobile address bar theming -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone mobile address bar theming -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari mobile address bar theming -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
+  <!-- Fav and Title -->
+  <link rel="icon" href="/static/halfmoon/img/halfmoon-fav-alt.png">
+  <title>COMEX</title>
+
+  <!-- Halfmoon -->
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <!-- Roboto font (Used when Apple system fonts are not available) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Documentation styles -->
+  <link href="/static/site/css/documentation-styles-4.css" rel="stylesheet">
+</head>
+
+<body class=" with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+
+  <!-- Page wrapper start -->
+  <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="full-height">
+
+    <!-- Sticky alerts -->
+    <div class="sticky-alerts"></div>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+      <a href="#" class="navbar-brand ml-10 ml-sm-20">
+        <span class="d-none d-sm-flex"><span style="color:#FFA705;">EXPORTACIÓN</span></span>
+      </a>
+        
+      <div class="navbar-content ml-auto">
+        <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Sidebar overlay -->
+    <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <div class="sidebar-content">
+          <div class="mt-10 font-size-18 font-weight-bold">COMERCIO EXTERIOR</div>
+        </div>
+          <p><a href="introduccion.html" class="sidebar-link font-weight-medium" style="font-size:1.15em">Introducción</a></p>
+          <h5 class="sidebar-title">Importación</h5>
+          <div class="sidebar-divider"></div>
+          <a href="imp-01.html" class="sidebar-link">Cheque Bancario</a>
+          <a href="imp-02.html" class="sidebar-link">Transferéncia</a>
+          <a href="imp-03.html" class="sidebar-link">Remesa Simple</a>
+          <a href="imp-04.html" class="sidebar-link">Remesa Documentaria contra Aceptación</a>
+          <a href="imp-05.html" class="sidebar-link">Remesa Documentaria contra Pago</a>
+          <a href="imp-06.html" class="sidebar-link">Crédito Documentario</a>
+          <br />
+          <h5 class="sidebar-title">Exportación</h5>
+          <div class="sidebar-divider"></div>
+          <a href="exp-01.html" class="sidebar-link">Cheque Personal</a>
+          <a href="exp-02.html" class="sidebar-link active">Cheque Bancario</a>
+          <a href="exp-03.html" class="sidebar-link">Transferéncia</a>
+          <a href="exp-04.html" class="sidebar-link">Remesa Simple</a>
+          <a href="exp-05.html" class="sidebar-link">Remesa Documentaria contra Aceptación</a>
+          <a href="exp-06.html" class="sidebar-link">Remesa Documentaria contra Pago</a>
+          <a href="exp-07.html" class="sidebar-link">Crédito Documentario</a>
+          <br />
+          <h5 class="sidebar-title">Financiación de Comercio Exterior</h5>
+          <div class="sidebar-divider"></div>
+          <a href="fce.html" class="sidebar-link">Conceptos básicos</a>
+          <div class="sidebar-title">Para el importador</div>
+          <a href="fcei-01.html" class="sidebar-link" style="margin-left:10px;">Financiación de Importaciones</a>
+          <a href="fcei-02.html" class="sidebar-link" style="margin-left:10px;">Financiación de Importaciones sin recurso para el proveedor</a>
+          <div class="sidebar-title">Para el exportador</div>
+          <a href="fcee-01.html" class="sidebar-link" style="margin-left:10px;">Pre y Post Financiación de Exportaciones</a>
+          <a href="fcee-02.html" class="sidebar-link" style="margin-left:10px;">Financiación de Exportaciones sin recurso para el exportador</a>
+          <br />
+          <h5 class="sidebar-title">Garantías / Avales</h5>
+          <div class="sidebar-divider"></div>
+          <a href="ga-01.html" class="sidebar-link">Garantías Emitidas</a>
+          <a href="ga-02.html" class="sidebar-link">Garantías Recibidas</a>
+          <br />
+          <h5 class="sidebar-title">Coberturas de Divisas</h5>
+          <div class="sidebar-divider"></div>
+          <a href="sc.html" class="sidebar-link">Seguros de cambio</a>
+          <h5 class="sidebar-title">Documento Comerciales</h5>
+          <div class="sidebar-divider"></div>
+          <a href="dc.html" class="sidebar-link">Documentos</a>
+          <h5 class="sidebar-title">Alertas y Recomendaciones</h5>
+          <div class="sidebar-divider"></div>
+          <a href="ar.html" class="sidebar-link">Alertas y Recomendaciones</a>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Content wrapper start -->
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class="row row-eq-spacing-lg">
+            <div class="col-lg-12">
+              <div class="sidebar-title font-size-22" style="color:#223D5B;">
+                <i class="bi bi-bookmark-fill"></i> Cheque Bancario
+              </div>
+              <div>
+                <table class="sidebar-title">
+                  <tr>
+                    <td class="font-size-14">Temas relacionados:</td>
+                    <td class="pl-10"><span class="sidebar-icon bg-transparent" data-toggle="tooltip" data-title="Financiación" data-placement="top"><a href="fcee-01.html"><span class="material-icons my-10 text-muted" style="font-size:32px">paid</span></a></span></td>
+                    <td class="pl-5"><span class="sidebar-icon bg-transparent" data-toggle="tooltip" data-title="Seguro de cambio" data-placement="top"><a href="sc.html"><span class="material-icons my-10 text-muted " style="font-size:32px">vpn_lock</span></a></span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">DEFINICIÓN</h2>
+                </div>
+                <div class="content">
+                  El cheque bancario: es el que emite una entidad de crédito extranjera, por orden y cuenta de su cliente (importador), a favor del exportador español.
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">PROCESO DE LA OPERACIÓN</h2>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>El exportador envía la mercancía y la documentación directamente al importador y espera que éste le remita el cheque a su favor.</li>
+                    <li>Una vez recibido el cheque, el exportador lo presenta a su banco.</li>
+                    <li>El banco debe evaluar la solvencia de su cliente y comprobar los requisitos formales del cheque previamente a su aceptación.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">MOTIVOS DE ELECCIÓN DE ESTE SISTEMA DE COBRO</h2>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>Existe un relación continuada de máxima confianza entre las partes.</li>
+                    <li> El exportador español puede contar con garantías suficientes del importador, gracias a un contrato establecido entre ambas partes.</li>
+                    <li>Desconocimiento de sistemas alternativos más rápidos, económicos y seguros, como la transferencia.</li>
+                    <li>Que el exportador disponga de seguros de crédito para cobertura de insolvencia que le garanticen los impagos.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">CARACTERÍSTICAS</h2>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>Los cheques tomados con la opción de abono en firme salvo buen fin son abonados de forma inmediata, posiblemente con una retención en cuenta en función de la solvencia del cliente.</li>
+                    <li>Otra opción es abono en firme por lo que el cheque será enviado en gestión de cobro a la espera del abono definitivo por el banco extranjero.</li>
+                  </ul>
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th class="align-middle"><span class="sidebar-icon" data-toggle="tooltip" data-title="Publico objetivo" data-placement="top"><span class="material-icons" style="font-size:2rem; color: green;">people</span></span></th>
+                        <td>Exportadores tanto de mercancías como de servicios (empresas y particulares).</td>
+                      </tr>
+                      <tr>
+                        <th class="align-middle"><span class="sidebar-icon" data-toggle="tooltip" data-title="Riesgo" data-placement="top"><span class="material-icons" style="font-size:2rem; color: red;">warning</span></span></th>
+                        <td>
+                          <ul>
+                            <li>El exportador no tiene ninguna certeza de cobro cuando presenta el cheque en el banco extranjero y, sin embargo, las mercancías ya están en poder del importador.</li> 
+                            <li>El exportador está financiando a su cliente, pues éste no paga hasta que el cheque le es adeudado en cuenta.</li>
+                            <li>Es el peor medio de cobro para el exportador. Los otros medios de cobro son mas eficientes.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="content">
+                <p>Este método no reporta ventajas diferenciales para el exportador en relación con otras formas de cobro/pago, ni ofrece más garantías que el cheque personal.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content wrapper end -->
+
+      <!-- Navbar fixed bottom start -->
+      <nav class="navbar navbar-fixed-bottom">
+                <a href="https://asencat.cat/" target="_blank" class="ml-10"><img src="../images/asencat.png" style="width:125px;height:23px" /></a><span class="navbar-text">&copy; Copyright 2021</span>
+      </nav>
+      <!-- Navbar fixed bottom end -->
+
+  </div>
+  <!-- Page wrapper end -->
+
+  <!-- Halfmoon JS -->
+  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  <script type="text/javascript">
+      // Toasts a default alert
+      function toastAlert() {
+          var alertContent = "This is a default alert with <a href='#' class='alert-link'>a link</a> being toasted.";
+          // Built-in function
+          halfmoon.initStickyAlert({
+              content: alertContent,
+              title: "Toast!"
+          })
+      }
+
+      // Toggles the parent's dark mode (if this page is loaded in an iFrame) 
+      function parentToggleDarkmode() {
+          window.parent.toggleDarkModeFromChild();
+      }
+
+      // Override the dark mode toggle function to call the parent's one
+      // Again, this is for the case where the page is loaded in an iFrame
+      if (window !== window.parent) {
+          halfmoon.toggleDarkMode = parentToggleDarkmode;
+      }
+  </script>
+</body>
+
+</html>

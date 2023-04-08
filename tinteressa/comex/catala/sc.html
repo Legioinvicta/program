@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Chrome, Firefox OS and Opera mobile address bar theming -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone mobile address bar theming -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari mobile address bar theming -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
+  <!-- Fav and Title -->
+  <link rel="icon" href="/static/halfmoon/img/halfmoon-fav-alt.png">
+  <title>COMEX</title>
+
+  <!-- Halfmoon -->
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <!-- Roboto font (Used when Apple system fonts are not available) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Documentation styles -->
+  <link href="/static/site/css/documentation-styles-4.css" rel="stylesheet">
+</head>
+
+<body class=" with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+
+  <!-- Page wrapper start -->
+  <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="full-height">
+
+    <!-- Sticky alerts -->
+    <div class="sticky-alerts"></div>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+      <a href="#" class="navbar-brand ml-10 ml-sm-20">
+        <span class="d-none d-sm-flex"><span style="color:#FFA705;">COBERTURES DE DIVISES</span></span>
+      </a>
+        
+      <div class="navbar-content ml-auto">
+        <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Sidebar overlay -->
+    <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <div class="sidebar-content">
+          <div class="mt-10 font-size-18 font-weight-bold">COMERÇ EXTERIOR</div>
+        </div>
+          <p><a href="introduccion.html" class="sidebar-link font-weight-medium" style="font-size:1.15em">Introducció</a></p>
+          <h5 class="sidebar-title">Importació</h5>
+          <div class="sidebar-divider"></div>
+          <a href="imp-01.html" class="sidebar-link">Xec Bancari</a>
+          <a href="imp-02.html" class="sidebar-link">Transferència</a>
+          <a href="imp-03.html" class="sidebar-link">Remesa Simple</a>
+          <a href="imp-04.html" class="sidebar-link">Remesa Documentària contra Acceptació</a>
+          <a href="imp-05.html" class="sidebar-link">Remesa Documentària contra Pagament</a>
+          <a href="imp-06.html" class="sidebar-link">Crèdit Documentari</a>
+          <br />
+          <h5 class="sidebar-title">Exportació</h5>
+          <div class="sidebar-divider"></div>
+          <a href="exp-01.html" class="sidebar-link">Xec Personal</a>
+          <a href="exp-02.html" class="sidebar-link">Xec Bancari</a>
+          <a href="exp-03.html" class="sidebar-link">Transferència</a>
+          <a href="exp-04.html" class="sidebar-link">Remesa Simple</a>
+          <a href="exp-05.html" class="sidebar-link">Remesa Documentària contra Acceptació</a>
+          <a href="exp-06.html" class="sidebar-link">Remesa Documentària contra Pagament</a>
+          <a href="exp-07.html" class="sidebar-link">Crèdit Documentari</a>
+          <br />
+          <h5 class="sidebar-title">Finançament de Comerç Exterior</h5>
+          <div class="sidebar-divider"></div>
+          <a href="fce.html" class="sidebar-link">Conceptes bàsics</a>
+          <div class="sidebar-title">Per a l'importador</div>
+          <a href="fcei-01.html" class="sidebar-link" style="margin-left:10px;">Finançament d'Importacions</a>
+          <a href="fcei-02.html" class="sidebar-link" style="margin-left:10px;">Finançament d'Importacions sense recurs per al proveïdor</a>
+          <div class="sidebar-title">Per a l'exportador</div>
+          <a href="fcee-01.html" class="sidebar-link" style="margin-left:10px;">Pre i Post Finançament d'Exportacions</a>
+          <a href="fcee-02.html" class="sidebar-link" style="margin-left:10px;">Finançament d'Exportacions sense recurs per a l'exportador</a>
+          <br />
+          <h5 class="sidebar-title">Garanties / Avals</h5>
+          <div class="sidebar-divider"></div>
+          <a href="ga-01.html" class="sidebar-link">Garanties Emeses</a>
+          <a href="ga-02.html" class="sidebar-link">Garanties Rebudes</a>
+          <br />
+          <h5 class="sidebar-title">Cobertures de Divises</h5>
+          <div class="sidebar-divider"></div>
+          <a href="sc.html" class="sidebar-link active">Assegurances de canvi</a>
+          <h5 class="sidebar-title">Documents Comercials</h5>
+          <div class="sidebar-divider"></div>
+          <a href="dc.html" class="sidebar-link">Documents</a>
+          <h5 class="sidebar-title">Alertes i Recomanacions</h5>
+          <div class="sidebar-divider"></div>
+          <a href="ar.html" class="sidebar-link">Alertes i Recomanacions</a>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Content wrapper start -->
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class="row row-eq-spacing-lg">
+            <div class="col-lg-12">
+              <div class="sidebar-title font-size-22" style="color:#223D5B;">
+                <i class="bi bi-bookmark-fill"></i> Assegurances de Canvi
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">DEFINICIÓ</h2>
+                </div>
+                <div class="content">
+                  L'assegurança de canvi és un instrument de cobertura del risc de canvi pel qual el client i una entitat financera es comprometen a comprar-se o vendre's un import de divises, a una cotització i termini determinat.
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">MODALITATS</h2>
+                </div>
+                <div class="content">
+                  <p class="font-weight-bold font-size-16" style="color:#800000;">En funció de la data de venciment de l'assegurança de canvi es classifiquen en:</p>
+                  <dl>
+                    <dt class="font-weight-bold" style="color:#1B1FBE;">Assegurança de canvi a termini:</dt>
+                    <dd>Inclou les operacions que comporten compromisos de compra o venda de divises que tenen venciment en una data diferida superior a 2 dies hàbils de mercat de divises.</dd>
+                    <dt class="font-weight-bold" style="color:#1B1FBE;">Assegurança de canvi de comptat:</dt>
+                    <dd>Inclou les operacions que comporten compromisos de compra o venda de divises que tenen venciment el mateix dia de contractació (només per al dòlar USA), l'endemà o dos dies hàbils de mercat de divises.</dd>
+                  </dl> 
+                  <p>A les cotitzacions a més de dos dies hàbils de mercat de divises se'ls denomina <code class="code font-weight-bold">"cotitzacions a termini"</code>.</p>
+                  <p>A les cotitzacions iguals o inferiors a dos dies hàbils de mercat de divises, se'ls denomina <code class="code font-weight-bold">"cotització de comptat"</code></p>
+                   <p>Les assegurances de canvi s'utilitzen per a operacions comercials I financeres.</p>
+                  <div class="sidebar-divider"></div>
+                  <dl>
+                    <dt class="font-weight-bold" style="color:#1B1FBE;">Assegurança de canvi a termini "normal":</dt>
+                    <dd>El client només pot utilitzar l'assegurança de canvi en les condicions pactades en la data de preavís*. Si el client vol utilitzar l'assegurança de canvi anticipadament la cotització serà recalculada en funció dels diferencials de tipus d'interès i dies d'anticipació.</dd>
+                    <dt class="font-weight-bold" style="color:#1B1FBE;">Assegurança de canvi a termini obert:</dt>
+                    <dd>El client pot utilitzar l'assegurança de canvi al tipus de canvi contractat i de manera parcial o total en qualsevol moment, des de la data d'inici del període obert fins a la data de preavís*.</dd>
+                    <dt class="font-weight-bold" style="color:#1B1FBE;">Assegurança de canvide comptat:</dt>
+                    <dd>Només inclou les operacions que tenen venciment el propi dia, dia hàbil següent o 2 dies hàbils de mercat de divises. El client pot utilitzar l'assegurança de canvi al tipus de canvi contractat i de manera parcial o total en qualsevol moment.</dd>
+                  </dl>
+                  <p class="font-size-12">* (el mateix dia del venciment si l'assegurança de canvi és el dòlar USA o el dia hàbil anterior si és en qualsevol altra divisa).</p>
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">MOTIUS D'ELECCIÓ D'AQUEST SISTEMA DE COBRAMENT</h2>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>El client vol fixar la cotització que se li aplicarà en la compra de divises (per a pagament d'una importació) o en la venda de divises (per al cobrament d'una exportació) que efectuarà en una data futura i així cobrir-se d'una fluctuació contrària del tipus de canvi.</li>
+                    <li>El client desitja conèixer anticipadament quins seran els seus costos per a tenir l'estimació del benefici, efectuar el seu escandall, catalogo de preus, etc..</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">PROCÉS DE L'OPERACIÓ</h2>
+                </div>
+                <div class="content">
+                  <ul>
+                    <li>Les assegurances de canvi són operacions que comporten risc.</li>
+                    <li>La cobertura del risc pot obtenir-se per dos procediments:
+                      <ul>
+                        <li>1.1. Normalment vinculant l'assegurança a una línia de riscos comercials.</li>
+                        <li>1.2. Excepcionalment sense vinculació a línia de risc, sempre que s'hagi aprovat el risc, internament.</li>
+                      </ul>
+                    </li>
+                    <li>El client sol·licita la contractació d'una assegurança de canvi indicant les condicions de divisa, import i venciment. Una vegada s'acorda la cotització a termini que s'aplicarà, l'operació es formalitza mitjançant un document de constitució d'assegurança de canvi.</li>
+                    <li>En la data de preavís (el mateix dia de venciment si l'assegurança de canvi és en dòlar USA o el dia hàbil anterior si és en qualsevol altra divisa), el client ha d'efectuar la compra o la venda de la divisa a la cotització contractada.</li>
+                    <li>Si en la data de venciment el client no efectua la compra o la venda de la divisa contractada, l'assegurança de canvi es dóna per no utilitzada ("<span class="font-weight-bold">incomplert</span>") i s'efectua la liquidació de la diferència de canvi produïda en desfer l'operació, és a dir, corresponent a la diferència entre la cotització contractada en l'assegurança i la cotització de comptat existent en la data de liquidació, podent-se produir una pèrdua o benefici que es liquida en el compte del client.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">CARACTERÍSTIQUES</h2>
+                </div>
+                <div class="content">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th class="align-middle"><span class="sidebar-icon" data-toggle="tooltip" data-title="Públic objectiu" data-placement="top"><span class="material-icons" style="font-size:2rem; color: green;">people</span></span></th>
+                        <td>
+                          <ul>
+                            <li>Tots els clients d'una entitat financera que tinguin moviments de divises per operacions de mercaderies, serveis o de capital.</li>
+                            <li>Principalment els exportadors i importadors.</li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th class="align-middle"><span class="sidebar-icon" data-toggle="tooltip" data-title="Avantatges" data-placement="top"><span class="material-icons" style="font-size:2rem; color: blue;">thumb_up_alt</span></span></th>
+                        <td>
+                          <dl>
+                            <dt><i class="bi bi-caret-right-fill"></i> Exportadors</dt>
+                            <dd><i class="bi bi-check"></i> Evita incerteses sobre el tipus de canvi.</dd>
+                            <dd><i class="bi bi-check"></i> Aporta certesa en els ingressos produïts per l'exportació.</dd>
+                            <dt><i class="bi bi-caret-right-fill"></i> Importadors</dt>
+                            <dd><i class="bi bi-check"></i> Evita incerteses sobre el tipus de canvi.</dd>
+                            <dd><i class="bi bi-check"></i> Aporta seguretat en el preu de cost de la mercaderia.</dd>
+                          </dl>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="sidebar-divider"></div>
+                  <dl>
+                    <dt><i class="bi bi-caret-right-fill"></i> La cotització d'una divisa a termini s'obté per una fórmula matemàtica que incorpora els següents factors.</dt>
+                    <dd><i class="bi bi-check"></i> Cotització de la divisa en el mercat de comptat.</dd>
+                    <dd><i class="bi bi-check"></i> Diferència de dies entre la data valor de contractació (valor dos dies) i la data de venciment.</dd>
+                    <dd><i class="bi bi-check"></i> Diferència de tipus d'interès entre l'euro i la divisa el canvi de la qual vol assegurar-se.</dd>
+                    <dt><i class="bi bi-caret-right-fill"></i> La cotització de l'assegurança de canvi de comptat d'una divisa és la que està vigent, en el moment de la contractació, en la graella de cotitzacions de comptat.</dt>
+                  </dl>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content wrapper end -->
+
+      <!-- Navbar fixed bottom start -->
+      <nav class="navbar navbar-fixed-bottom">
+                <a href="https://asencat.cat/" target="_blank" class="ml-10"><img src="../images/asencat.png" style="width:125px;height:23px" /></a><span class="navbar-text">&copy; Copyright 2021</span>
+      </nav>
+      <!-- Navbar fixed bottom end -->
+
+  </div>
+  <!-- Page wrapper end -->
+
+  <!-- Halfmoon JS -->
+  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  <script type="text/javascript">
+      // Toasts a default alert
+      function toastAlert() {
+          var alertContent = "This is a default alert with <a href='#' class='alert-link'>a link</a> being toasted.";
+          // Built-in function
+          halfmoon.initStickyAlert({
+              content: alertContent,
+              title: "Toast!"
+          })
+      }
+
+      // Toggles the parent's dark mode (if this page is loaded in an iFrame) 
+      function parentToggleDarkmode() {
+          window.parent.toggleDarkModeFromChild();
+      }
+
+      // Override the dark mode toggle function to call the parent's one
+      // Again, this is for the case where the page is loaded in an iFrame
+      if (window !== window.parent) {
+          halfmoon.toggleDarkMode = parentToggleDarkmode;
+      }
+  </script>
+</body>
+
+</html>

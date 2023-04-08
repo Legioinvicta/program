@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title id='Description'>Consultes FACTURES-REBUTS</title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 minimum-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="../images/asen.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqwidgets/13.1.0/jqwidgets/styles/jqx.base.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqwidgets/13.1.0/jqwidgets/styles/jqx.light.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqwidgets/13.1.0/jqwidgets/jqx-all.min.js"></script>
+    <script src="A2020.js"></script>
+    <script src="A2021.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+           var linkrenderer = function (row, columnfield, value) {
+               var html ='<div style="text-align: center"><a href=' + '"' + value + '"' + 'target="_blank"><i class="far fa-file-pdf" style="color:red; font-size:1.2em; margin:4px 0px 0px 0px;"></i></a></div>';
+               if (value != "") {
+                  return html;
+               }
+           }
+
+           var colorimport = function (row, columnfield, value, defaulthtml, columnproperties) {
+               if (value < 0) {
+                  return '<span style="margin: 4px; float: ' + columnproperties.cellsalign + '; color: red;font-weight:bold">' + value + '</span>';
+               }
+               else {
+                  return '<span style="margin: 4px; float: ' + columnproperties.cellsalign + '; color: blue;font-weight:bold">' + value + '</span>';
+               }
+           }
+           var colorAssentament = function (row, columnfield, value, defaulthtml, columnproperties) {
+               return '<div style="margin: 4px; float; color: green;font-weight:bold;text-align: center">' + value + '</div>';
+           }
+
+           var initGrid1 = function () {
+               var source = {
+                   localdata: dades2020,   //"dades2020" variable que es trova en el fitxer "A2020.js"
+                   datatype: "json",
+                   datafields: [
+                      { name: 'data', type: 'date' },
+                      { name: 'mes', type: 'number' },
+                      { name: 'moviment', type: 'string' },
+                      { name: 'descripcio', type: 'string' },
+                      { name: 'factura', type: 'string' },
+                      { name: 'import', type: 'string' },
+                      { name: 'assentament', type: 'number' },
+                      { name: 'pdffac', type: 'string' },
+                      { name: 'pdfreb', type: 'string' }
+                   ],
+               };
+
+               var dataAdapter = new $.jqx.dataAdapter(source);
+
+               $("#grid1").jqxGrid({
+                   width: '100%',
+                   height: '100%',
+                   source: dataAdapter,
+                   theme: "light",
+                   enabletooltips: true,
+                   altrows: true,
+                   columnsheight: 30,        //Alçada de la fila de la capçalera
+                   rowsheight: 22,           //Alçada de les files de dades
+                   columnsresize: false,
+                   sortable: true,
+                   filterable: true,
+                   autoshowfiltericon: true,
+                   columns: [
+                      { text: 'Data', datafield: 'data', width: '8%', cellsalign: 'center', cellsformat: 'dd/MM/yyyy', filtertype: 'date' },
+                      { text: 'Mes', datafield: 'mes', width: '5%', cellsalign: 'center', filtertype: 'checkedlist' },
+                      { text: 'Moviment', datafield: 'moviment', width: '20%', cellsalign: 'left', filtertype: 'list' },
+                      { text: 'Descripció', datafield: 'descripcio', width: '21%', cellsalign: 'left', filtertype: 'list' },
+                      { text: 'Factura', datafield: 'factura', width: '21%', cellsalign: 'left', filtertype: 'list' },
+                      { text: 'Import', datafield: 'import', width: '10%', cellsalign: 'right', cellsformat: 'd2', cellsrenderer: colorimport },
+                      { text: 'A.C.', datafield: 'assentament', width: '5%', cellsrenderer: colorAssentament, filtertype: 'textbox' },
+                      { text: 'F', datafield: 'pdffac', width: '5%', cellsalign: 'center', cellsrenderer: linkrenderer },
+                      { text: 'R', datafield: 'pdfreb', width: '5%', cellsalign: 'center', cellsrenderer: linkrenderer }
+                   ]
+               });
+           }
+
+
+           var initGrid2 = function () {
+               var source = {
+                   localdata: dades2021,   //"dades2021" variable que es trova en el fitxer "A2021.js"
+                   datatype: "json",
+                   datafields: [
+                      { name: 'data', type: 'date' },
+                      { name: 'mes', type: 'number' },
+                      { name: 'moviment', type: 'string' },
+                      { name: 'descripcio', type: 'string' },
+                      { name: 'factura', type: 'string' },
+                      { name: 'import', type: 'string' },
+                      { name: 'assentament', type: 'number' },
+                      { name: 'pdffac', type: 'string' },
+                      { name: 'pdfreb', type: 'string' }
+                   ],
+               };
+
+
+               var dataAdapter = new $.jqx.dataAdapter(source);
+
+               $("#grid2").jqxGrid({
+                   width: '100%',
+                   height: '100%',
+                   source: dataAdapter,
+                   theme: "light",
+                   enabletooltips: true,
+                   altrows: true,
+                   columnsheight: 30,        //Alçada de la fila de la capçalera
+                   rowsheight: 22,           //Alçada de les files de dades
+                   columnsresize: false,
+                   sortable: true,
+                   filterable: true,
+                   autoshowfiltericon: true,
+                   columns: [
+                      { text: 'Data', datafield: 'data', width: '8%', cellsalign: 'center', cellsformat: 'dd/MM/yyyy', filtertype: 'date' },
+                      { text: 'Mes', datafield: 'mes', width: '5%', cellsalign: 'center', filtertype: 'checkedlist' },
+                      { text: 'Moviment', datafield: 'moviment', width: '20%', cellsalign: 'left', filtertype: 'list' },
+                      { text: 'Descripció', datafield: 'descripcio', width: '21%', cellsalign: 'left', filtertype: 'list' },
+                      { text: 'Factura', datafield: 'factura', width: '21%', cellsalign: 'left', filtertype: 'list' },
+                      { text: 'Import', datafield: 'import', width: '10%', cellsalign: 'right', cellsformat: 'd2', cellsrenderer: colorimport },
+                      { text: 'A.C.', datafield: 'assentament', width: '5%', cellsrenderer: colorAssentament },
+                      { text: 'F', datafield: 'pdffac', width: '5%', cellsalign: 'center', cellsrenderer: linkrenderer },
+                      { text: 'R', datafield: 'pdfreb', width: '5%', cellsalign: 'center', cellsrenderer: linkrenderer }
+                   ]
+               });
+           }
+
+
+
+
+
+           // init widgets.
+           var initWidgets = function (tab) {
+               switch (tab) {
+                   case 0:
+                      initGrid1();
+                      break;
+                   case 1:
+                      initGrid2();
+                      break;
+               }
+           }
+
+           $('#tabs').jqxTabs({ 
+              height: '95%',
+              width: '100%',
+              initTabContent: initWidgets,
+              theme: 'light'
+           });
+
+        });
+
+    </script>
+    <style>
+     body, html {
+        width: 99%;
+        height: 99%;
+        overflow: hidden;
+        padding: 3px;
+        /*box-sizing: border-box;
+        margin: 0;*/
+      }
+      #grid1 .jqx-grid-cell, #grid2 .jqx-grid-cell {
+        font-family: 'calibri';
+        font-size: 1.0em;
+      }
+      #grid1 .jqx-grid-column-header, #grid2 .jqx-grid-column-header {
+        font-family: 'Helvetica';
+        font-size: 14px;
+        font-weight:bold;
+      }
+      
+      /* Modifico el color de fons de la fila seleccionada per la que hia per defecte*/ 
+      .jqx-grid-cell-selected {
+         background-color:#E2E2E2 !important;
+         border: none
+      }
+      /*.jqx-grid-cell-hover {
+         background-color:gray;
+      }*/
+
+    </style>
+</head>
+<body class='default'>
+  <span style="font-family:calibri;font-size:1.3em; font-weight:bold">Consultes FACTURES-REBUTS</span><br />
+  <div id='tabs'>
+    <ul>
+      <li style="margin-left: 30px;">2020</li>
+      <li>2021</li>
+    </ul>
+    <div style="overflow: hidden;">
+      <div style="border:none;" id="grid1"></div>
+    </div>
+    <div style="overflow: hidden;">
+      <div style="border:none;" id="grid2"></div>
+    </div>
+  </div>
+
+</body>
+</html>

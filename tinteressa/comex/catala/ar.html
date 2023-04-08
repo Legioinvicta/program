@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="viewport" content="width=device-width" />
+
+  <!-- Chrome, Firefox OS and Opera mobile address bar theming -->
+  <meta name="theme-color" content="#000000">
+  <!-- Windows Phone mobile address bar theming -->
+  <meta name="msapplication-navbutton-color" content="#000000">
+  <!-- iOS Safari mobile address bar theming -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
+  <!-- Fav and Title -->
+  <link rel="icon" href="/static/halfmoon/img/halfmoon-fav-alt.png">
+  <title>COMEX</title>
+
+  <!-- Halfmoon -->
+  <link href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon.min.css" rel="stylesheet" />
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <!-- Roboto font (Used when Apple system fonts are not available) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Documentation styles -->
+  <link href="/static/site/css/documentation-styles-4.css" rel="stylesheet">
+</head>
+
+<body class=" with-custom-webkit-scrollbars with-custom-css-scrollbars" data-dm-shortcut-enabled="true" data-sidebar-shortcut-enabled="true">
+
+  <!-- Page wrapper start -->
+  <div id="page-wrapper" class="page-wrapper with-navbar with-sidebar with-navbar-fixed-bottom" data-sidebar-type="full-height">
+
+    <!-- Sticky alerts -->
+    <div class="sticky-alerts"></div>
+
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <button id="toggle-sidebar-btn" class="btn btn-action" type="button" onclick="halfmoon.toggleSidebar()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+      <a href="#" class="navbar-brand ml-10 ml-sm-20">
+        <span class="d-none d-sm-flex"><span style="color:#FFA705;">ALERTES I RECOMANACIONS</span></span>
+      </a>
+        
+      <div class="navbar-content ml-auto">
+        <button class="btn btn-action mr-5" type="button" onclick="halfmoon.toggleDarkMode()">
+          <i class="fa fa-moon-o" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+
+
+    <!-- Sidebar overlay -->
+    <div class="sidebar-overlay" onclick="halfmoon.toggleSidebar()"></div>
+
+    <!-- Sidebar start -->
+    <div class="sidebar">
+      <div class="sidebar-menu">
+        <div class="sidebar-content">
+          <div class="mt-10 font-size-18 font-weight-bold">COMERÇ EXTERIOR</div>
+        </div>
+          <p><a href="introduccion.html" class="sidebar-link font-weight-medium" style="font-size:1.15em">Introdución</a></p>
+          <h5 class="sidebar-title">Importació</h5>
+          <div class="sidebar-divider"></div>
+          <a href="imp-01.html" class="sidebar-link">Xec Bancari</a>
+          <a href="imp-02.html" class="sidebar-link">Transferència</a>
+          <a href="imp-03.html" class="sidebar-link">Remesa Simple</a>
+          <a href="imp-04.html" class="sidebar-link">Remesa Documentària contra Acceptació</a>
+          <a href="imp-05.html" class="sidebar-link">Remesa Documentària contra Pagament</a>
+          <a href="imp-06.html" class="sidebar-link">Crèdit Documentari</a>
+          <br />
+          <h5 class="sidebar-title">Exportació</h5>
+          <div class="sidebar-divider"></div>
+          <a href="exp-01.html" class="sidebar-link">Xec Personal</a>
+          <a href="exp-02.html" class="sidebar-link">Xec Bancari</a>
+          <a href="exp-03.html" class="sidebar-link">Transferència</a>
+          <a href="exp-04.html" class="sidebar-link">Remesa Simple</a>
+          <a href="exp-05.html" class="sidebar-link">Remesa Documentària contra Acceptació</a>
+          <a href="exp-06.html" class="sidebar-link">Remesa Documentària contra Pagament</a>
+          <a href="exp-07.html" class="sidebar-link">Crèdit Documentari</a>
+          <br />
+          <h5 class="sidebar-title">Finançament de Comerç Exterior</h5>
+          <div class="sidebar-divider"></div>
+          <a href="fce.html" class="sidebar-link">Conceptes bàsics</a>
+          <div class="sidebar-title">Per a l'importador</div>
+          <a href="fcei-01.html" class="sidebar-link">Finançament d'Importacions</a>
+          <a href="fcei-02.html" class="sidebar-link">Finançament d'Importacions sense recurs per al proveïdor</a>
+          <div class="sidebar-title">Per a l'exportador</div>
+          <a href="fcee-01.html" class="sidebar-link">Pre i Post Finançament d'Exportacions</a>
+          <a href="fcee-02.html" class="sidebar-link">Finançament d'Exportacions sense recurs per a l'exportador</a>
+          <br />
+          <h5 class="sidebar-title">Garanties / Avals</h5>
+          <div class="sidebar-divider"></div>
+          <a href="ga-01.html" class="sidebar-link">Garanties Emeses</a>
+          <a href="ga-02.html" class="sidebar-link">Garanties Rebudes</a>
+          <br />
+          <h5 class="sidebar-title">Cobertures de Divises</h5>
+          <div class="sidebar-divider"></div>
+          <a href="sc.html" class="sidebar-link">Assegurances de canvi</a>
+          <h5 class="sidebar-title">Documents Comercials</h5>
+          <div class="sidebar-divider"></div>
+          <a href="dc.html" class="sidebar-link">Documents</a>
+          <h5 class="sidebar-title">Alertes i Recomanacions</h5>
+          <div class="sidebar-divider"></div>
+          <a href="ar.html" class="sidebar-link active">Alertas y Recomendaciones</a>
+        </div>
+      </div>
+      <!-- Sidebar end -->
+
+      <!-- Content wrapper start -->
+      <div class="content-wrapper">
+        <div class="container-fluid">
+          <div class="row row-eq-spacing-lg">
+            <div class="col-lg-12">
+              <div class="sidebar-title font-size-22" style="color:#223D5B;"><i class="bi bi-bookmark-fill"></i> Alertes i Recomenacions</div>
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">ALERTES</h2>
+                </div>
+                <div class="content">
+
+                  <table>
+                    <tr>
+                      <td class="text-right px-5">1.</td>
+                      <td>COBRAMENT AMB XEC PERSONAL </td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:red;">highlight_off</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">2.</td>
+                      <td> COBRAMENT AMB XEC BANCARI</td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:red;">highlight_off</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">3.</td>
+                      <td>COBRAMENT PER TRANSFERÈNCIA </td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:yellow;">error_outline</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">4.</td>
+                      <td>COBRAMENT PER REMESA SIMPLE D'EXPORTACIÓ</td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:gray;">help_outline</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">5.</td>
+                      <td>COBRAMENT PER REMESA SIMPLE ELECTRONICA</td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:gray;">help_outline</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">6.</td>
+                      <td>COBRAMENT PER REMESA DOCUMENTÀRIA CONTRA ACCEPTACIÓ</td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:gray;">help_outline</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">7.</td>
+                      <td>COBRAMENT PER REMESA DOCUMENTÀRIA CONTRA PAGAMENT</td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:gray;">help_outline</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">8.</td>
+                      <td>PAGAMENT PER TRANSFERÈNCIA </td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:yellow;">error_outline</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">9.</td>
+                      <td>PAGAMENT PER REMESA DOCUMENTÀRIA CONTRA ACCEPTACIÓ</td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:gray;">help_outline</span></td>
+                    </tr>
+                    <tr>
+                      <td class="text-right px-5">10.</td>
+                      <td>PAGAMENT PER REMESA DOCUMENTÀRIA CONTRA PAGAMENT</td>
+                      <td><span class="material-icons pl-10" style="font-size:24px; color:gray;">help_outline</span></td>
+                    </tr>
+                  </table>
+                  <ul class="mt-20">
+                    <li>1 y 2 – Alta possibilitat d'impagament, alt cost bancari i termini molt llarg de reposició de fons, és a dir <span style="font-weight:bold;color:red;">alt cost financer</span>.</li>
+                    <li>3 -  Possible enviament de la mercaderia i no recepció de la transferència, no controlem els dies de cobrament, en cas de finançar-se <span style="font-weight:bold;color:red;">alt cost financer</span>. Si el cobrament és a compte no existeix cap dels problemes anteriors.</li>
+                    <li>4 y 5  - Possible enviament de la mercaderia i no recepció de la transferència, no controlem els dies de cobrament, en cas de finançar-se <span style="font-weight:bold;color:red;">alt cost financer</span>.</li>
+                    <li>6 – Possibilitat d'acceptació, retirada de la documentació, despatxar la mercaderia i impagament al venciment. En cas de finançar-se <span style="font-weight:bold;color:red;">alt cost financer</span>.</li>
+                    <li>7 – En cas de no retirar la documentació, a més de no cobrar, haurà d'assumir els costos bancaris, de magatzematge, repatriació de la mercaderia etc. <span style="font-weight:bold;color:red;">alt cost financer</span>.</li>
+                    <li>8 -   Possible pagament i no recepció de la mercaderia o mercaderia diferent o en mal estat de la sol·licitada. Només en cas de pagament anticipat.</li>
+                    <li>9 -   Acceptació de la documentació i que la mercaderia sol·licitada no sigui la sol·licitada o est en mal estat. Podrem impagar la remesa.</li>
+                   <li>10 – Pagament de la remesa per a retirar la documentació i que la mercaderia sol·licitada no sigui la sol·licitada o est en mal estat.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="card p-0">
+                <div class="px-card py-5 border-bottom" style="background:#FFA705;">
+                  <h2 class="card-title font-size-16 m-0" style="color:#ffffff;">RECOMANACIONS</h2>
+                </div>
+                <div class="content">
+                  <ol>
+                    <dt><div style="padding:5px;background:#98C6C9;width:50px;font-weight:bold;border-radius:7px;text-align:center">C D E</div></dt>
+                    <dd>Major
+seguretat de cobrament si és confirmat, el risc de pagament el tindrà l'entitat confirmadora al nostre país i si complim amb tots els termes del crèdit. Si no fos confirmat hauria de ser emès per un banc de primer ordre i país solvent.</dd>
+	            <dd class="mt-5">Major facilitat de finançament per part de la banca, per ser un producte segur de cobrament, a més, possibilitat d'efectuar compra sense recurs dels documents pel nostre banc, per la qual cosa no necessitarem incrementar les nostres línies de risc i a més no sortirà en CIRBE, pel que millorem balanç.</dd>
+                    <dt class="mt-10"><div style="padding:5px;background:#EFE17E;width:50px;font-weight:bold;border-radius:7px;text-align:center">C D I</div></dt>
+                    <dd>Amb aquest producte eliminem tots els riscos dels altres mitjans de pagament que hem comentat.</dd>
+	            <dd class="mt-5">Financerament pot ser que sigui una mica més car a nivell de comissions bancàries, però ens dóna un gran ventall d'oportunitats, com:
+                      <ul>
+                        <li>No haver de pagar anticipadament per tenir el pagament garantit.</li>
+	                      <li>Possibilitat de finançar a l'exportador estranger.</li>
+	                      <li>La banca concedeix millor una línia de riscos comercials per a aquest producte que per a finançament, un és risc de signatura i l'altre risc financer.</li>
+                      </ul>
+                    </dd>
+                   </ol>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Content wrapper end -->
+
+      <!-- Navbar fixed bottom start -->
+      <nav class="navbar navbar-fixed-bottom">
+                <a href="https://asencat.cat/" target="_blank" class="ml-10"><img src="../images/asencat.png" style="width:125px;height:23px" /></a><span class="navbar-text">&copy; Copyright 2021</span>
+      </nav>
+      <!-- Navbar fixed bottom end -->
+
+  </div>
+  <!-- Page wrapper end -->
+
+  <!-- Halfmoon JS -->
+  <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+  <script type="text/javascript">
+      // Toasts a default alert
+      function toastAlert() {
+          var alertContent = "This is a default alert with <a href='#' class='alert-link'>a link</a> being toasted.";
+          // Built-in function
+          halfmoon.initStickyAlert({
+              content: alertContent,
+              title: "Toast!"
+          })
+      }
+
+      // Toggles the parent's dark mode (if this page is loaded in an iFrame) 
+      function parentToggleDarkmode() {
+          window.parent.toggleDarkModeFromChild();
+      }
+
+      // Override the dark mode toggle function to call the parent's one
+      // Again, this is for the case where the page is loaded in an iFrame
+      if (window !== window.parent) {
+          halfmoon.toggleDarkMode = parentToggleDarkmode;
+      }
+  </script>
+</body>
+
+</html>
